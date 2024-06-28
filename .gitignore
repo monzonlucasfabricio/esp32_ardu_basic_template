@@ -1,0 +1,8 @@
+basic/build
+.metadata
+tool_set_config.json
+basic/.clangd
+basic/.cproject
+basic/.settings
+basic/.vscode
+basic/.project
