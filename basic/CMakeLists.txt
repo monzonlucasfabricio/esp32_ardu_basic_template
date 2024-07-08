@@ -4,6 +4,11 @@ cmake_minimum_required(VERSION 3.16)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
-set(EXTRA_COMPONENT_DIRS components/arduino)
-
+# Añadir el directorio de componentes
+list(APPEND EXTRA_COMPONENT_DIRS "components/arduino")
+list(APPEND EXTRA_COMPONENT_DIRS "components/stdintf")
+list(APPEND EXTRA_COMPONENT_DIRS "components/app")
+list(APPEND EXTRA_COMPONENT_DIRS "components/wrapper")
 project(basic)
+
+message(STATUS "Component directories: ${EXTRA_COMPONENT_DIRS}")
